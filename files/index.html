@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeDrive | Premium Car Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #top {
+            /* to change tha position mean set the button as our wish any where to first set position fixed then set top,right,bottom etc things */
+            position: fixed;
+            right: 50px;
+            bottom: 20px;
+            font-size: 25px;
+            border-radius: 50%;
+            padding: 10px;
+            display: none;
+            width: 50px;
+            animation-name: top-name;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            transition: transform 0.3s ease;
+        }
+
+        #top:hover {
+            transform: scale(1.05);
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-orange shadow-sm sticky-top"
+        style="font-family: 'Poppins', sans-serif;">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4 text-primary" href="#">FASHION<span class="text-dark">Store</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active fw-semibold nav-hover" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold nav-hover" href="#brands">Brands</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold nav-hover" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fw-semibold nav-hover" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold nav-hover" href="#contact">Contact</a></li>
+                </ul>
+
+                <!-- Extra items on the right (clock + cart) -->
+            </div>
+            <span class="ms-3 fw-semibold" id="clock">00:00:00 AM</span>
+            <div class="cart-icon ms-3 position-relative" id="cartIcon">
+                <i class="fas fa-shopping-cart fs-5"></i>
+                <span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    id="cartCount">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 style="font-family: 'Poppins', sans-serif;">Discover Your choice With fashion</h1>
+            <div class="btn-group">
+                <a href="#brands" class="hero-btn">Explore Collection</a>
+                <a href="#about" class="hero-btn hero-btn-outline">Learn More</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="section" id="brands">
+        <div class="container">
+            <div class="blur">
+                <div class="child_blur">
+                    <div class="section-title">
+                        <h2 style="font-family: 'Poppins', sans-serif;">Premium Brands</h2>
+                    </div>
+                    <div class="brands-grid" id="brandsGrid">
+                        <!-- Brand cards will be added here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars Modal -->
+    <div class="modal" id="carsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalBrandTitle" style="font-family: 'Poppins', sans-serif;">Brand Cars</h3>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <div class="cars-grid" id="carsGrid">
+                <!-- Car cards will be added here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="font-family: 'Poppins', sans-serif;">What Our Clients Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text" style="font-family: 'Poppins', sans-serif;">
+                        I love the quality and comfort! The fabric feels premium, and the fit is just perfect.
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah Johnson"
+                            class="author-img">
+                        <div class="author-info">
+                            <h4 style="font-family: 'Poppins', sans-serif;">Sarah Johnson</h4>
+                            <p style="font-family: 'Poppins', sans-serif;">Business Executive</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text" style="font-family: 'Poppins', sans-serif;">
+                       Trendy, stylish, and affordable. I always get compliments when I wear these outfits!
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="author-img">
+                        <div class="author-info">
+                            <h4 style="font-family: 'Poppins', sans-serif;">Michael Chen</h4>
+                            <p style="font-family: 'Poppins', sans-serif;">Tech Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text" style="font-family: 'Poppins', sans-serif;">
+                       I love the quality and comfort! The fabric feels premium, and the fit is just perfect.
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emily Rodriguez"
+                            class="author-img">
+                        <div class="author-info">
+                            <h4 style="font-family: 'Poppins', sans-serif;">Emily Rodriguez</h4>
+                            <p style="font-family: 'Poppins', sans-serif;">Fashion Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added here by JavaScript -->
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">$0</span>
+        </div>
+        <div class="cart-actions">
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 style="font-family: 'Poppins', sans-serif;">FashionStore</h3>
+                    <p>Shop your favorite clothes effortlessly — stylish, affordable, and delivered right to your
+                        doorstep.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 style="font-family: 'Poppins', sans-serif;">Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#brands">Brands</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 style="font-family: 'Poppins', sans-serif;">Services</h3>
+                    <ul>
+                        <li><a href="#">Vehicle Selection</a></li>
+                        <li><a href="#">Financing</a></li>
+                        <li><a href="#">Trade-In</a></li>
+                        <li><a href="#">Maintenance</a></li>
+                        <li><a href="#">Concierge</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 style="font-family: 'Poppins', sans-serif;">Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Patel colony, jamnagar 361008</li>
+                        <li><i class="fas fa-phone"></i> 1234567890</li>
+                        <li><i class="fas fa-envelope"></i> info@FashionStore.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 7PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FashionStore. All rights reserved. | Designed with <i class="fas fa-heart"></i> for
+                    shopping</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="top" title="go to top">↑</button>
+
+    <script>
+        const toTopBtn = document.getElementById("top");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                toTopBtn.style.display = "block";
+            } else {
+                toTopBtn.style.display = "none";
+            }
+        };
+        toTopBtn.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+
+    <script src="index.js">
+
+    </script>
+
+    <script>
+        function updateclock() {
+            const now = new Date()
+
+            let hours = now.getHours()
+            let minutes = now.getMinutes()
+            let seconds = now.getSeconds()
+            let period = "AM"
+
+            if (hours >= 12) {
+                period = "PM"
+                if (hours > 12) {
+                    hours = hours - 12 // it mean when time is 1 o'clock (13) = output will be 13 - 12 = 1pm
+                }
+            }
+
+            if (hours === 0) {
+                hours = 12      // this means when in mindnight after 11:59 time is 00(12) so its converts in 12 o'clock in midnight
+            }
+
+            // this means its ternary operator add choose it because real time shows like this: 8 : 9 : 6. its not looking good and its also bad. so its try to when time or minutes is less than 10 its add 0 as string, so output is 08 : 09: 06
+            hours = hours < 10 ? "0" + hours : hours
+            minutes = minutes < 10 ? "0" + minutes : minutes
+            seconds = seconds < 10 ? "0" + seconds : seconds
+
+            const timestring = `${hours}:${minutes}:${seconds} ${period}`
+            document.getElementById("clock").textContent = timestring
+        }
+
+        // want to update time in every one second
+        // setInterval = (updateclock, 1000)
+        setInterval(() => {
+            updateclock()
+        }, 1000);
+
+        updateclock()
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
