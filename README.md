@@ -20,7 +20,9 @@ Frontend: HTML, CSS, JavaScript (or React if you used it)
 Styling: CSS / TailwindCSS (mention what you used)
 Deployment: Vercel
 
+
 📸 Screenshots
+
 <img width="1349" height="637" alt="e commerce_picture" src="https://github.com/user-attachments/assets/9ffd0cf9-4387-4fbe-9133-803c00cb70af" />
 <img width="1348" height="634" alt="e commerce_picture_2" src="https://github.com/user-attachments/assets/afe7a025-a57d-47c1-a980-e9e4155a847e" />
 <img width="1352" height="633" alt="e commerce_picture_3" src="https://github.com/user-attachments/assets/841697c9-1b85-4329-8c7a-c3b0f98d99b6" />
