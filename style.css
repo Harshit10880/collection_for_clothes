@@ -146,7 +146,7 @@ nav ul li a:hover::after {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(26, 54, 93, 0.7), rgba(26, 54, 93, 0.7)),
-        url('../e-commerce for clothes/home_page.jpg') no-repeat center center/cover;
+        url('../e-commerce for clothes/image/home_page.jpg') no-repeat center center/cover;
     color: var(--light-text);
     display: flex;
     align-items: center;
