@@ -21,6 +21,7 @@ Styling: CSS / TailwindCSS (mention what you used)
 Deployment: Vercel
 
 📸 Screenshots
-![home_page](https://github.com/user-attachments/assets/156c00e7-64c6-4591-bb79-ec308f36ba3b)
+<img width="1349" height="637" alt="e commerce_picture" src="https://github.com/user-attachments/assets/9ffd0cf9-4387-4fbe-9133-803c00cb70af" />
+
 
 
