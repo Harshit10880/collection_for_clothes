@@ -26,6 +26,13 @@ Deployment: Vercel
 <img width="1352" height="633" alt="e commerce_picture_3" src="https://github.com/user-attachments/assets/841697c9-1b85-4329-8c7a-c3b0f98d99b6" />
 <img width="1345" height="627" alt="e commerce_picture_4" src="https://github.com/user-attachments/assets/65e34be1-e356-4acb-93db-10ddcbaf8dae" />
 <img width="1347" height="637" alt="e commerce_picture_5" src="https://github.com/user-attachments/assets/af5c3a1f-3208-4c57-8366-ac70bdc32c3c" />
+<img width="1347" height="632" alt="e commerce_picture_6" src="https://github.com/user-attachments/assets/0739cf4a-3260-4c95-bb79-d864bda1af24" />
+<img width="1350" height="631" alt="e commerce_picture_7" src="https://github.com/user-attachments/assets/c211a4e3-4635-4d9e-872a-5513b362babd" />
+<img width="1348" height="625" alt="e commerce_picture_8" src="https://github.com/user-attachments/assets/8cc601ac-8eb1-4ac0-a65f-794e086c3b42" />
+<img width="1348" height="626" alt="e commerce_picture_9" src="https://github.com/user-attachments/assets/fb46cfcd-8184-42a6-bff5-1329e36fdafd" />
+
+
+
 
 
 
